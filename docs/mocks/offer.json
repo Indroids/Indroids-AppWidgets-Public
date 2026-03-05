@@ -1,0 +1,183 @@
+{
+  "id": "root",
+  "type": "ColumnElement",
+  "elements": [
+    {
+      "uiType": "com.indroids.eccproto.domain.models.elements.CardElement",
+      "variant": "Elevated",
+      "content": {
+        "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+        "id": "card_content",
+        "type": "ColumnElement",
+        "elements": [
+          {
+            "uiType": "com.indroids.eccproto.domain.models.elements.ImageElement",
+            "model": {
+              "uiType": "url",
+              "url": "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+            },
+            "contentScale": "Crop",
+            "modifiers": [
+              {
+                "uiType": "size",
+                "heightDp": 180
+              }
+            ],
+            "id": "offer_image",
+            "type": "ImageElement",
+            "metadata": {}
+          },
+          {
+            "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+            "id": "offer_details",
+            "type": "ColumnElement",
+            "elements": [
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                "id": "row_title",
+                "type": "RowElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "offer_title",
+                    "text": "Special Spring Offer!",
+                    "accessibility": "Offer Title",
+                    "style": {
+                      "fontSizeSp": 18,
+                      "fontWeight": "BOLD",
+                      "textAlign": "START"
+                    }
+                  }
+                ],
+                "eccAlignment": "CenterVertically",
+                "eccArrangement": "Start",
+                "metadata": {},
+                "modifiers": [
+                  {
+                    "uiType": "fillMaxWidth",
+                    "fraction": 1
+                  },
+                  {
+                    "uiType": "padding",
+                    "vertical": 6
+                  }
+                ]
+              },
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                "id": "row_subtitle",
+                "type": "RowElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "offer_subtitle",
+                    "text": "Get 25% off on all products until March 15th. Limited time offer!",
+                    "accessibility": "Offer Subtitle",
+                    "style": {
+                      "fontSizeSp": 14,
+                      "textAlign": "START"
+                    },
+                    "modifiers": [
+                      {
+                        "uiType": "padding",
+                        "top": 8
+                      }
+                    ]
+                  }
+                ],
+                "eccAlignment": "CenterVertically",
+                "eccArrangement": "Start",
+                "metadata": {},
+                "modifiers": [
+                  {
+                    "uiType": "fillMaxWidth",
+                    "fraction": 1
+                  }
+                ]
+              },
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                "id": "row_cta",
+                "type": "RowElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.ButtonElement",
+                    "actionId": "action_button_670221",
+                    "content": {
+                      "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                      "id": "row_809221",
+                      "type": "RowElement",
+                      "elements": [
+                        {
+                          "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                          "id": "lbl_323431",
+                          "text": "Claim Offer",
+                          "accessibility": "Claim Offer"
+                        }
+                      ],
+                      "eccAlignment": "CenterVertically",
+                      "eccArrangement": "Center",
+                      "metadata": {},
+                      "modifiers": []
+                    },
+                    "id": "button_670221",
+                    "type": "ButtonElement",
+                    "metadata": {},
+                    "modifiers": []
+                  }
+                ],
+                "eccAlignment": "CenterVertically",
+                "eccArrangement": "Start",
+                "metadata": {},
+                "modifiers": [
+                  {
+                    "uiType": "padding",
+                    "vertical": 8
+                  }
+                ]
+              }
+            ],
+            "eccAlignment": "Start",
+            "eccArrangement": "SpaceEvenly",
+            "metadata": {},
+            "modifiers": [
+              {
+                "uiType": "fillMaxWidth",
+                "fraction": 1
+              },
+              {
+                "uiType": "padding",
+                "top": 20
+              }
+            ]
+          }
+        ],
+        "eccAlignment": "Start",
+        "eccArrangement": "Top",
+        "metadata": {},
+        "modifiers": [
+          {
+            "uiType": "padding",
+            "all": 20
+          }
+        ]
+      },
+      "id": "offer_card",
+      "modifiers": [
+        {
+          "uiType": "padding",
+          "vertical": 24
+        }
+      ]
+    }
+  ],
+  "eccAlignment": "Start",
+  "eccArrangement": "Top",
+  "metadata": {},
+  "modifiers": [
+    {
+      "uiType": "fillMaxWidth",
+      "fraction": 1
+    }
+  ]
+}

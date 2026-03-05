@@ -1,0 +1,227 @@
+{
+  "id": "root",
+  "type": "ColumnElement",
+  "elements": [
+    {
+      "uiType": "com.indroids.eccproto.domain.models.elements.CardElement",
+      "variant": "Elevated",
+      "content": {
+        "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+        "id": "card_content",
+        "type": "ColumnElement",
+        "elements": [
+          {
+            "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+            "id": "header_row",
+            "type": "RowElement",
+            "elements": [
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.ImageElement",
+                "model": {
+                  "uiType": "url",
+                  "url": "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+                },
+                "contentScale": "Crop",
+                "modifiers": [
+                  {
+                    "uiType": "clip",
+                    "shape": "CIRCLE"
+                  },
+                  {
+                    "uiType": "size",
+                    "widthDp": 72,
+                    "heightDp": 72
+                  }
+                ],
+                "id": "profile_image",
+                "type": "ImageElement",
+                "metadata": {}
+              },
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+                "id": "name_column",
+                "type": "ColumnElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "name_text",
+                    "text": "Ut Enim ad Minim Veniam",
+                    "accessibility": "Contact Name",
+                    "style": {
+                      "fontSizeSp": 18,
+                      "fontWeight": "BOLD",
+                      "textAlign": "START"
+                    }
+                  },
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "role_text",
+                    "text": "Senior Product Designer",
+                    "accessibility": "Role",
+                    "style": {
+                      "fontSizeSp": 14,
+                      "textAlign": "START"
+                    },
+                    "modifiers": [
+                      {
+                        "uiType": "padding",
+                        "top": 4
+                      }
+                    ]
+                  }
+                ],
+                "eccAlignment": "Start",
+                "eccArrangement": "Center",
+                "metadata": {},
+                "modifiers": [
+                  {
+                    "uiType": "padding",
+                    "start": 16
+                  },
+                  {
+                    "uiType": "fillMaxWidth",
+                    "fraction": 1
+                  }
+                ]
+              }
+            ],
+            "eccAlignment": "Center",
+            "eccArrangement": "Start",
+            "metadata": {},
+            "modifiers": [
+              {
+                "uiType": "fillMaxWidth",
+                "fraction": 1
+              }
+            ]
+          },
+          {
+            "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+            "id": "contact_details",
+            "type": "ColumnElement",
+            "elements": [
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                "id": "row_492888",
+                "type": "RowElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.IconElement",
+                    "id": "icon_389750",
+                    "icon": {
+                      "uiType": "IconResource",
+                      "name": "Person"
+                    },
+                    "modifiers": [
+                      {
+                        "uiType": "padding",
+                        "horizontal": 8
+                      }
+                    ]
+                  },
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "phone_text",
+                    "text": "+1 234 567 890",
+                    "accessibility": "+1 234 567 890",
+                    "style": {
+                      "fontSizeSp": 14,
+                      "textAlign": "START"
+                    }
+                  }
+                ],
+                "eccAlignment": "CenterVertically",
+                "eccArrangement": "Start",
+                "metadata": {},
+                "modifiers": []
+              },
+              {
+                "uiType": "com.indroids.eccproto.domain.models.elements.RowElement",
+                "id": "row_813314",
+                "type": "RowElement",
+                "elements": [
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.IconElement",
+                    "id": "icon_623708",
+                    "icon": {
+                      "uiType": "IconResource",
+                      "name": "Mail"
+                    },
+                    "modifiers": [
+                      {
+                        "uiType": "padding",
+                        "horizontal": 8
+                      }
+                    ]
+                  },
+                  {
+                    "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                    "id": "email_text",
+                    "text": "ut.enim@example.com",
+                    "accessibility": "ut.enim@example.com",
+                    "style": {
+                      "fontSizeSp": 14,
+                      "textAlign": "START"
+                    },
+                    "modifiers": [
+                      {
+                        "uiType": "padding",
+                        "top": 8
+                      }
+                    ]
+                  }
+                ],
+                "eccAlignment": "CenterVertically",
+                "eccArrangement": "Start",
+                "metadata": {},
+                "modifiers": []
+              }
+            ],
+            "eccAlignment": "Start",
+            "eccArrangement": "Top",
+            "metadata": {},
+            "modifiers": [
+              {
+                "uiType": "fillMaxWidth",
+                "fraction": 1
+              },
+              {
+                "uiType": "padding",
+                "top": 20
+              }
+            ]
+          }
+        ],
+        "eccAlignment": "Start",
+        "eccArrangement": "Top",
+        "metadata": {},
+        "modifiers": [
+          {
+            "uiType": "padding",
+            "all": 20
+          }
+        ]
+      },
+      "id": "contact_card",
+      "modifiers": [
+        {
+          "uiType": "padding",
+          "vertical": 24
+        },
+        {
+          "uiType": "size",
+          "widthDp": 372
+        }
+      ]
+    }
+  ],
+  "eccAlignment": "Start",
+  "eccArrangement": "Top",
+  "metadata": {},
+  "modifiers": [
+    {
+      "uiType": "fillMaxWidth",
+      "fraction": 1
+    }
+  ]
+}

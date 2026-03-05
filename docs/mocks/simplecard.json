@@ -1,0 +1,101 @@
+  {
+    "id": "root",
+    "type": "ColumnElement",
+    "elements": [
+      {
+        "uiType": "com.indroids.eccproto.domain.models.elements.CardElement",
+        "variant": "Elevated",
+        "content": {
+          "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+          "id": "card_content",
+          "type": "ColumnElement",
+          "elements": [
+            {
+              "uiType": "com.indroids.eccproto.domain.models.elements.ImageElement",
+              "model": {
+                "uiType": "url",
+                "url": "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+              },
+              "contentScale": "Crop",
+              "modifiers": [
+                {
+                  "uiType": "clip",
+                  "shape": "CIRCLE"
+                },
+                {
+                  "uiType": "size",
+                  "widthDp": 100,
+                  "heightDp": 100
+                }
+              ],
+              "id": "profile_image",
+              "type": "ImageElement",
+              "metadata": {}
+            },
+            {
+              "uiType": "com.indroids.eccproto.domain.models.elements.ColumnElement",
+              "id": "column_347630",
+              "type": "ColumnElement",
+              "elements": [
+                {
+                  "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                  "id": "title_text",
+                  "text": "Ut Enim ad Minim Veniam",
+                  "accessibility": "Ut Enim ad Minim Veniam",
+                  "style": {
+                    "fontSizeSp": 20,
+                    "fontWeight": "BOLD",
+                    "textAlign": "START"
+                  }
+                },
+                {
+                  "uiType": "com.indroids.eccproto.domain.models.elements.TextElement",
+                  "id": "subtitle_text",
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                  "accessibility": "Lorem ipsum dolor sit amet",
+                  "style": {
+                    "fontSizeSp": 14,
+                    "textAlign": "START"
+                  }
+                }
+              ],
+              "eccAlignment": "Start",
+              "eccArrangement": "Top",
+              "metadata": {},
+              "modifiers": [
+                {
+                  "uiType": "padding",
+                  "vertical": 17
+                }
+              ]
+            }
+          ],
+          "eccAlignment": "Center",
+          "eccArrangement": "Top",
+          "metadata": {},
+          "modifiers": [
+            {
+              "uiType": "padding",
+              "all": 24
+            }
+          ]
+        },
+        "id": "card_beautiful",
+        "modifiers": [
+          {
+            "uiType": "size",
+            "widthDp": 228
+          }
+        ]
+      }
+    ],
+    "eccAlignment": "Start",
+    "eccArrangement": "Top",
+    "metadata": {},
+    "modifiers": [
+      {
+        "uiType": "fillMaxWidth",
+        "fraction": 1
+      }
+    ]
+  }

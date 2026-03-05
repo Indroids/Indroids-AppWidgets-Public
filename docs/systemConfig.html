@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Info Collector</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 40px;
+          background: #f5f5f5;
+          color: #333;
+        }
+        h1 { color: #0077cc; }
+        pre {
+          background: #fff;
+          padding: 16px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          margin-top: 20px;
+          cursor: pointer;
+          border: none;
+          border-radius: 6px;
+          background: #0077cc;
+          color: white;
+        }
+        button:hover {
+          background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Send Host Info to Mobile Device Server</h1>
+
+<p>Click the button to detect your browser/host info and send it to your mobile device server:</p>
+
+<button id="sendInfoBtn">Send Host Info</button>
+
+<h2>Detected Info:</h2>
+<pre id="hostInfoDisplay">Nothing detected yet...</pre>
+
+<script>
+    async function getHostInfo() {
+      // Collect info from browser
+      const hostInfo = {
+        userAgent: navigator.userAgent,
+        platform: navigator.platform,
+        cores: navigator.hardwareConcurrency || 'N/A',
+        memoryGB: navigator.deviceMemory || 'N/A',
+        screenWidth: window.screen.width,
+        screenHeight: window.screen.height,
+        language: navigator.language
+      };
+
+      // Display in page
+      document.getElementById('hostInfoDisplay').textContent = JSON.stringify(hostInfo, null, 2);
+
+      try {
+        // Replace <DEVICE_IP> and <PORT> with your mobile device server address
+        const response = await fetch('http://<DEVICE_IP>:8080/host-info', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(hostInfo)
+        });
+
+        if (response.ok) {
+          alert('Host info successfully sent to mobile server!');
+        } else {
+          alert('Failed to send info. Status: ' + response.status);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Error connecting to mobile server. Make sure both devices are on the same network.');
+      }
+    }
+
+    document.getElementById('sendInfoBtn').addEventListener('click', getHostInfo);
+</script>
+
+</body>
+</html>
